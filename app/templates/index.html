@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNFAPAC</title>
+    {% load static %}
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'public/images/apple-touch-icon.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'public/images/favicon-32x32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'public/images/favicon-16x16.png' %}" />
+    <link rel="manifest" href="{% static 'public/images/site.webmanifest' %}" />
+
+    {% if DEBUG %}
+        <!-- Development Scripts -->
+        <script type="module">
+            import RefreshRuntime from 'http://localhost:5173/static/@react-refresh';
+            RefreshRuntime.injectIntoGlobalHook(window);
+            window.$RefreshReg$ = () => {};
+            window.$RefreshSig$ = () => (type) => type;
+            window.__vite_plugin_react_preamble_installed__ = true;
+        </script>
+        <script type="module" src="http://localhost:5173/static/@vite/client"></script>
+        <script type="module" src="http://localhost:5173/static/src/main.tsx"></script>
+    {% else %}
+        <!-- Production Scripts -->
+        <script type="module" src="{% static 'main.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'assets/main.css' %}">
+    {% endif %}
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
