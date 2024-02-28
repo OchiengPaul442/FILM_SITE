@@ -38,4 +38,6 @@ lib
 # yarn
 yarn.lock
 
+# automatations
+.sh
 

@@ -23,6 +23,8 @@
     /* Paths */
     "baseUrl": "./",
     "paths": {
+      "@src/*": ["app/src/*"],
+      "@public/*": ["app/public/*"],
       "@services/*": ["app/src/services/*"],
       "@components/*": ["app/src/components/*"],
       "@pages/*": ["app/src/pages/*"],
