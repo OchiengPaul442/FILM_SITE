@@ -1,16 +1,20 @@
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
+import { store } from './services/redux/store';
+import MNAFAPAC from "@pages/MNFAPAC";
 
 const App = () => {
   return (
-    
+    <Provider store={store}>
       <Router>
         <Routes>
-          <Route path="/" element={<div className='text-orange-500'>Home</div>} />
+          <Route
+            path="/"
+            element={<MNAFAPAC />}
+          />
         </Routes>
       </Router>
-  
+    </Provider>
   );
 };
 
