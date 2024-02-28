@@ -1,5 +1,6 @@
 import React from 'react';
 import Arrow_Down_Right_LG from '/icons/MNFAPAC/Arrow_Down_Right_LG.png';
+import { Link } from 'react-router-dom';
 
 interface SplitSectionProps {
   title: string;
@@ -36,10 +37,12 @@ const SplitSection: React.FC<SplitSectionProps> = ({
             className="mt-2 mb-4 leading-[1.5rem] w-[70%]"
             dangerouslySetInnerHTML={{ __html: subText }}
           ></p>
-          <button className="bg-transparent text-white py-2 px-4 border border-white">
-            {btnText}
-            <span className="ml-4">{'-->'}</span>
-          </button>
+          <Link to="/courses">
+            <button className="bg-transparent text-white py-2 px-4 border border-white">
+              {btnText}
+              <span className="ml-4">{'-->'}</span>
+            </button>
+          </Link>
         </div>
         <div className="relative flex justify-center align-middle w-full h-full">
           <img
