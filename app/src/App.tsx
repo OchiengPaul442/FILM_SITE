@@ -4,6 +4,7 @@ import { store } from './services/redux/store';
 import MNAFAPAC from '@pages/MNFAPAC';
 import Courses from '@pages/MNFAPAC/Courses';
 import CourseDetails from '@pages/MNFAPAC/Courses/details';
+import Film from '@pages/Film';
 import { TopScrollOnVisit } from '@services/utils';
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" element={<MNAFAPAC />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/course/:id" element={<CourseDetails />} />
+          <Route path="/film" element={<Film />} />
         </Routes>
       </Router>
     </Provider>

@@ -13,7 +13,7 @@ const HeadSection = ({
   scrollText = true,
 }: HeadSectionProps) => {
   return (
-    <div className="w-auto h-auto md:h-screen md:w-screen relative">
+    <div className="w-full h-auto md:h-screen relative">
       <div className="absolute top-0 left-0 w-full">
         <NavBar />
       </div>

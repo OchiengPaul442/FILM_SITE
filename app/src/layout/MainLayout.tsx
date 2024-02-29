@@ -31,7 +31,7 @@ const MainLayout = ({
         content={content}
         scrollText={scrollText}
       />
-      <div>{children}</div>
+      <div className="w-full h-full overflow-hidden">{children}</div>
       <Footer />
     </div>
   );

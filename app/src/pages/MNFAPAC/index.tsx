@@ -1,4 +1,3 @@
-// import React from 'react'
 import MainLayout from '../../layout/MainLayout';
 import StudioImage from '/images/studio.png';
 import VideoSection from '@components/sections/VideoSection';
