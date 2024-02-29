@@ -54,7 +54,7 @@ const index = () => {
       scrollText={true}
       content={
         <div className="absolute text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-          <h6>Ndagire Mariam Film Academy</h6>
+          <h4>Ndagire Mariam Film Academy</h4>
           <h1>Lights. Camera. Action.</h1>
         </div>
       }

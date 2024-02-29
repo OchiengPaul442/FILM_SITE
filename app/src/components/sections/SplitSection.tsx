@@ -37,11 +37,12 @@ const SplitSection: React.FC<SplitSectionProps> = ({
             className="mt-2 mb-4 leading-[1.5rem] w-[70%]"
             dangerouslySetInnerHTML={{ __html: subText }}
           ></p>
-          <Link to="/courses">
-            <button className="bg-transparent text-white py-2 px-4 border border-white">
-              {btnText}
-              <span className="ml-4">{'-->'}</span>
-            </button>
+          <Link
+            to={'/courses'}
+            className="bg-transparent text-white py-2 px-4 border border-white"
+          >
+            {btnText}
+            <span className="ml-4">{'-->'}</span>
           </Link>
         </div>
         <div className="relative flex justify-center align-middle w-full h-full">

@@ -74,6 +74,7 @@ const Carousel: React.FC<CarouselProps> = ({
                     className="w-[80px] h-[80px] rounded-full object-cover"
                     src={item.image}
                     alt={item.name}
+                    loading="lazy"
                   />
                   <div>
                     <h6 className="font-semibold">{item.name}</h6>

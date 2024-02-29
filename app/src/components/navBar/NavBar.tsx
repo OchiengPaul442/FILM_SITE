@@ -5,7 +5,8 @@ import logo from '/images/logo.jpg';
 const NavBar = () => {
   const matchRoot = useMatch('/');
   const matchCourses = useMatch('/courses');
-  const match = matchRoot || matchCourses;
+  const matchDetails = useMatch('/course/:id');
+  const match = matchRoot || matchCourses || matchDetails;
   return (
     <nav className="bg-transparent relative mx-auto p-2 mt-0 w-full">
       <div className="container relative mx-auto flex flex-wrap items-center justify-around">

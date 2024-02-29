@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import HeadSection from '../components/sections/HeadSection';
+import Footer from '../components/footer/Footer';
 
 interface MainProps {
   children: React.ReactNode;
@@ -31,6 +32,7 @@ const MainLayout = ({
         scrollText={scrollText}
       />
       <div>{children}</div>
+      <Footer />
     </div>
   );
 };
